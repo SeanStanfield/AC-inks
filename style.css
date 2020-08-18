@@ -136,11 +136,11 @@ section.landing {
 
 @keyframes float {
   from {
-    transform: translateY(-15px);
+    transform: translateY(-30px);
   }
 
   to {
-    transform: translateY(0px);
+    transform: translateY(15px);
   }
 }
 .neon-text {
