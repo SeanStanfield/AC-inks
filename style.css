@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/assets/bgBricks.jpg);
+  background-repeat: repeat;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0);
+}
+
+.neon-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.neon-text {
+  font-family: "NEON";
+  color: cyan;
+  font-size: 10vmin;
+  text-align: center;
+  text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
+  letter-spacing: 0.2rem;
+  position: relative;
+}
+
+.neon-text h1 {
+  position: relative;
+  /* height: 150px; */
+  /* padding: 2rem; */
+}
+
+.neon-text h1::before {
+  content: "";
+  width: 140%;
+  height: 100%;
+  position: absolute;
+  /* border: solid; */
+  left: 0%;
+  transform: translateX(-20%);
+  background-image: radial-gradient(
+    rgba(46, 243, 243, 0.473) 55%,
+    transparent 75%
+  );
+  filter: blur(35px);
+}
