@@ -120,7 +120,7 @@ section.landing {
 
 .landing-bottom {
   position: absolute;
-  bottom: 30px;
+  bottom: 0px;
   height: 100px;
   background-image: linear-gradient(transparent, rgb(20, 20, 20));
   width: 100vw;
@@ -136,11 +136,11 @@ section.landing {
 
 @keyframes float {
   from {
-    transform: translateY(0px);
+    transform: translateY(-15px);
   }
 
   to {
-    transform: translateY(15px);
+    transform: translateY(0px);
   }
 }
 .neon-text {
