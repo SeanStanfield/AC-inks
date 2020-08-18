@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "True Lies";
+  src: url(/assets/TrueLies.ttf);
+}
+
+@font-face {
+  font-family: "brat";
+  src: url(/assets/Brat.ttf);
+}
+
+@font-face {
+  font-family: "NEON";
+  src: url(/assets/Neon.ttf);
+}
+
 body {
   background-image: url(/assets/bgBricks.jpg);
   background-repeat: repeat;
