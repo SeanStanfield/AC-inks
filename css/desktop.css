@@ -1,0 +1,67 @@
+@media all and (min-width: 1000px) and (orientation: landscape) {
+  section.landing {
+    text-align: left;
+    padding-left: 5rem;
+    background-image: url(/assets/Desktop-hero-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+  }
+
+  .nav {
+    height: 120px;
+  }
+
+  .nav .right {
+    text-align: right;
+    justify-content: flex-end;
+  }
+  .nav .right ul {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin-right: 3rem;
+  }
+
+  .right ul a {
+    text-decoration: none;
+  }
+
+  /* section.landing::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35vw;
+    background-image: linear-gradient(to right, black, transparent);
+    height: 100vh;
+    z-index: -1;
+  } */
+
+  .neon-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .neon-container .neon-text {
+    text-align: left;
+    font-size: 70px;
+  }
+
+  .subtitle {
+    text-align: left;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 350px;
+    transform: translateY(-50%) rotate(-10deg);
+  }
+
+  .hero-para {
+    margin: unset;
+    text-align: left;
+    font-size: 19px;
+    margin-top: 5rem;
+    padding-left: 0;
+    padding-bottom: 3rem;
+  }
+}
