@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @font-face {
@@ -22,12 +23,15 @@
 body {
   background-image: url(/assets/bgBricks.jpg);
   background-repeat: repeat;
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0);
+          box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0);
   max-width: 100vw;
   overflow-x: hidden;
 }
 
 section.landing {
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
   width: 100vw;
   max-width: 100vw;
@@ -44,23 +48,34 @@ section.landing {
   /* border: solid red; */
   margin-bottom: 0rem;
   padding-bottom: 3vmax;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .nav .left,
 .nav .right {
   /* border: solid; */
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav .left {
-  flex: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .nav .name {
-  transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
   padding-left: 1.5rem;
 }
 
@@ -76,18 +91,25 @@ section.landing {
 }
 
 .neon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 0rem;
   padding-bottom: 6vmax;
 }
 
 .brush {
   font-family: "True Lies";
-  color: rgb(235, 233, 233);
+  color: #ebe9e9;
   letter-spacing: 0.3rem;
-  transform: rotate(-9deg);
+  -webkit-transform: rotate(-9deg);
+          transform: rotate(-9deg);
 }
 
 .subtitle {
@@ -115,19 +137,33 @@ section.landing {
   text-decoration: none;
   font-family: brat;
   font-size: 1rem;
-  color: rgb(34, 34, 34);
-  box-shadow: 0px 0px 20px var(--neon-text-glow);
-  animation: throb infinite 10s ease alternate;
+  color: #222222;
+  -webkit-box-shadow: 0px 0px 20px var(--neon-text-glow);
+          box-shadow: 0px 0px 20px var(--neon-text-glow);
+  -webkit-animation: throb infinite 10s ease alternate;
+          animation: throb infinite 10s ease alternate;
   margin-bottom: 5vmax;
+}
+
+@-webkit-keyframes throb {
+  from {
+    -webkit-box-shadow: 0px 0px 20px var(--neon-text-glow);
+            box-shadow: 0px 0px 20px var(--neon-text-glow);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 30px var(--neon-text-glow);
+            box-shadow: 0px 0px 30px var(--neon-text-glow);
+  }
 }
 
 @keyframes throb {
   from {
-    box-shadow: 0px 0px 20px var(--neon-text-glow);
+    -webkit-box-shadow: 0px 0px 20px var(--neon-text-glow);
+            box-shadow: 0px 0px 20px var(--neon-text-glow);
   }
-
   to {
-    box-shadow: 0px 0px 30px var(--neon-text-glow);
+    -webkit-box-shadow: 0px 0px 30px var(--neon-text-glow);
+            box-shadow: 0px 0px 30px var(--neon-text-glow);
   }
 }
 
@@ -136,7 +172,8 @@ section.landing {
   bottom: 0;
   left: 0;
   height: 100px;
-  background-image: linear-gradient(transparent, rgb(9, 9, 9));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#090909));
+  background-image: linear-gradient(transparent, #090909);
   width: 100vw;
   max-width: 100vw;
   text-align: center;
@@ -145,32 +182,46 @@ section.landing {
 .landing-arrow {
   display: block;
   width: 30px;
-  animation: float 3s ease alternate infinite;
+  -webkit-animation: float 3s ease alternate infinite;
+          animation: float 3s ease alternate infinite;
   text-align: center;
   margin: auto;
   padding-top: 12vmax;
   z-index: 2;
 }
 
-@keyframes float {
+@-webkit-keyframes float {
   from {
-    transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
-
   to {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
+
+@keyframes float {
+  from {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
 .neon-text {
   font-family: "NEON";
   color: var(--neon-text-color);
   font-size: 12vmin;
   text-align: center;
-  text-shadow: var(--neon-text-color) 0px 0px 5px,
-    var(--neon-text-color) 0px 0px 3px;
+  text-shadow: var(--neon-text-color) 0px 0px 5px, var(--neon-text-color) 0px 0px 3px;
   letter-spacing: 0.5rem;
   position: relative;
-  animation: flickertext 4s infinite;
+  -webkit-animation: flickertext 4s infinite;
+          animation: flickertext 4s infinite;
 }
 
 .neon-text h1 {
@@ -187,10 +238,52 @@ section.landing {
   position: absolute;
   /* border: solid; */
   left: 0%;
-  transform: translateX(-15%);
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
   background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
-  filter: blur(35px);
-  animation: flickerbg 4s infinite;
+  -webkit-filter: blur(35px);
+          filter: blur(35px);
+  -webkit-animation: flickerbg 4s infinite;
+          animation: flickerbg 4s infinite;
+}
+
+@-webkit-keyframes flickertext {
+  19% {
+    color: var(--neon-text-color);
+    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+  }
+  20% {
+    text-shadow: none;
+    color: #222222;
+  }
+  24% {
+    color: var(--neon-text-color);
+    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+  }
+  79% {
+    color: var(--neon-text-color);
+    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+  }
+  80% {
+    text-shadow: none;
+    color: #222222;
+  }
+  81% {
+    color: var(--neon-text-color);
+    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+  }
+  81.5% {
+    text-shadow: none;
+    color: #222222;
+  }
+  83% {
+    color: var(--neon-text-color);
+    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+  }
+  100% {
+    color: var(--neon-text-color);
+    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+  }
 }
 
 @keyframes flickertext {
@@ -200,21 +293,19 @@ section.landing {
   }
   20% {
     text-shadow: none;
-    color: rgb(34, 34, 34);
+    color: #222222;
   }
   24% {
     color: var(--neon-text-color);
     text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
   }
-
   79% {
     color: var(--neon-text-color);
     text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
   }
-
   80% {
     text-shadow: none;
-    color: rgb(34, 34, 34);
+    color: #222222;
   }
   81% {
     color: var(--neon-text-color);
@@ -222,75 +313,83 @@ section.landing {
   }
   81.5% {
     text-shadow: none;
-    color: rgb(34, 34, 34);
+    color: #222222;
   }
   83% {
     color: var(--neon-text-color);
     text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
   }
-
   100% {
     color: var(--neon-text-color);
     text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
   }
 }
 
-@keyframes flickerbg {
+@-webkit-keyframes flickerbg {
   19% {
-    background-image: radial-gradient(
-      var(--bg-glow-color) 55%,
-      transparent 75%
-    );
+    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
   }
-
   20% {
-    background-image: radial-gradient(
-      rgba(46, 243, 243, 0.096) 55%,
-      transparent 75%
-    );
+    background-image: radial-gradient(rgba(46, 243, 243, 0.096) 55%, transparent 75%);
   }
-
   24% {
-    background-image: radial-gradient(
-      var(--bg-glow-color) 55%,
-      transparent 75%
-    );
+    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
   }
-
   79% {
-    background-image: radial-gradient(
-      var(--bg-glow-color) 55%,
-      transparent 75%
-    );
+    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
   }
-
   80% {
-    background-image: radial-gradient(
-      rgba(46, 243, 243, 0.096) 55%,
-      transparent 75%
-    );
+    background-image: radial-gradient(rgba(46, 243, 243, 0.096) 55%, transparent 75%);
   }
   81% {
-    background-image: radial-gradient(
-      var(--bg-glow-color) 55%,
-      transparent 75%
-    );
+    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+  }
+}
+
+@keyframes flickerbg {
+  19% {
+    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+  }
+  20% {
+    background-image: radial-gradient(rgba(46, 243, 243, 0.096) 55%, transparent 75%);
+  }
+  24% {
+    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+  }
+  79% {
+    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+  }
+  80% {
+    background-image: radial-gradient(rgba(46, 243, 243, 0.096) 55%, transparent 75%);
+  }
+  81% {
+    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
   }
 }
 
 .latest {
-  height: auto; /*change me*/
-  background-color: rgb(9, 9, 9);
+  height: auto;
+  /*change me*/
+  background-color: #090909;
   /* border: pink solid; */
 }
 
 .latest-header {
   text-align: center;
   padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .latest-title {
@@ -316,15 +415,23 @@ section.landing {
   /* border: solid pink; */
   margin: 2rem 0rem 0rem 0rem;
   padding-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
 }
 
 .gallery-img {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   width: 45%;
   /* flex-basis: 140px; */
   /* max-width: 150px; */
@@ -339,7 +446,9 @@ section.landing {
 
 .gallery-img img {
   /* border: solid red; */
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   height: auto;
 }
+/*# sourceMappingURL=mobile.css.map */
