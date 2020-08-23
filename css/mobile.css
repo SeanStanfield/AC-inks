@@ -391,7 +391,7 @@ section.landing {
 }
 
 .body {
-  font-family: "MADE TOMMY";
+  font-family: "MADE TOMMY", "lato", sans-serif;
   color: whitesmoke;
   font-size: 17px;
   width: 500px;
