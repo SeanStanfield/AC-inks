@@ -68,12 +68,10 @@ section.landing {
   display: none;
 }
 
-:root {
-  --neon-text-color: cyan;
-  --neon-text-glow: rgba(0, 255, 255, 0.76);
-  --bg-glow-color: rgba(42, 219, 219, 0.226);
-  --gallery-margin: 0.7rem;
-}
+$neon-text-color: cyan;
+$neon-text-glow: rgba(0, 255, 255, 0.76);
+$bg-glow-color: rgba(42, 219, 219, 0.226);
+$gallery-margin: 0.7rem;
 
 .neon-container {
   display: flex;
@@ -116,18 +114,18 @@ section.landing {
   font-family: brat;
   font-size: 1rem;
   color: rgb(34, 34, 34);
-  box-shadow: 0px 0px 20px var(--neon-text-glow);
+  box-shadow: 0px 0px 20px $neon-text-glow;
   animation: throb infinite 10s ease alternate;
   margin-bottom: 5vmax;
 }
 
 @keyframes throb {
   from {
-    box-shadow: 0px 0px 20px var(--neon-text-glow);
+    box-shadow: 0px 0px 20px $neon-text-glow;
   }
 
   to {
-    box-shadow: 0px 0px 30px var(--neon-text-glow);
+    box-shadow: 0px 0px 30px $neon-text-glow;
   }
 }
 
@@ -163,11 +161,10 @@ section.landing {
 }
 .neon-text {
   font-family: "NEON";
-  color: var(--neon-text-color);
+  color: $neon-text-color;
   font-size: 12vmin;
   text-align: center;
-  text-shadow: var(--neon-text-color) 0px 0px 5px,
-    var(--neon-text-color) 0px 0px 3px;
+  text-shadow: $neon-text-color 0px 0px 5px, $neon-text-color 0px 0px 3px;
   letter-spacing: 0.5rem;
   position: relative;
   animation: flickertext 4s infinite;
@@ -188,28 +185,28 @@ section.landing {
   /* border: solid; */
   left: 0%;
   transform: translateX(-15%);
-  background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+  background-image: radial-gradient($bg-glow-color) 55%, transparent 75%;
   filter: blur(35px);
   animation: flickerbg 4s infinite;
 }
 
 @keyframes flickertext {
   19% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: $neon-text-color;
+    text-shadow: cyan 0px 0px 30px, $neon-text-glow 0px 0px 10px;
   }
   20% {
     text-shadow: none;
     color: rgb(34, 34, 34);
   }
   24% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: $neon-text-color;
+    text-shadow: cyan 0px 0px 30px, $neon-text-glow 0px 0px 10px;
   }
 
   79% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: $neon-text-color;
+    text-shadow: cyan 0px 0px 30px, $neon-text-glow 0px 0px 10px;
   }
 
   80% {
@@ -217,30 +214,27 @@ section.landing {
     color: rgb(34, 34, 34);
   }
   81% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: $neon-text-color;
+    text-shadow: cyan 0px 0px 30px, $neon-text-glow 0px 0px 10px;
   }
   81.5% {
     text-shadow: none;
     color: rgb(34, 34, 34);
   }
   83% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: $neon-text-color;
+    text-shadow: cyan 0px 0px 30px, $neon-text-glow 0px 0px 10px;
   }
 
   100% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: $neon-text-color;
+    text-shadow: cyan 0px 0px 30px, $neon-text-glow 0px 0px 10px;
   }
 }
 
 @keyframes flickerbg {
   19% {
-    background-image: radial-gradient(
-      var(--bg-glow-color) 55%,
-      transparent 75%
-    );
+    background-image: radial-gradient($bg-glow-color) 55%, transparent 75%;
   }
 
   20% {
@@ -251,17 +245,11 @@ section.landing {
   }
 
   24% {
-    background-image: radial-gradient(
-      var(--bg-glow-color) 55%,
-      transparent 75%
-    );
+    background-image: radial-gradient($bg-glow-color) 55%, transparent 75%;
   }
 
   79% {
-    background-image: radial-gradient(
-      var(--bg-glow-color) 55%,
-      transparent 75%
-    );
+    background-image: radial-gradient($bg-glow-color) 55%, transparent 75%;
   }
 
   80% {
@@ -271,10 +259,7 @@ section.landing {
     );
   }
   81% {
-    background-image: radial-gradient(
-      var(--bg-glow-color) 55%,
-      transparent 75%
-    );
+    background-image: radial-gradient($bg-glow-color) 55%, transparent 75%;
   }
 }
 
@@ -328,13 +313,13 @@ section.landing {
   width: 45%;
   /* flex-basis: 140px; */
   /* max-width: 150px; */
-  padding-left: var(--gallery-margin);
-  padding-bottom: var(--gallery-margin);
+  padding-left: $gallery-margin;
+  padding-bottom: $gallery-margin;
   /* max-width: 300px; */
 }
 
 .gallery-img:nth-child(even) {
-  padding-right: var(--gallery-margin);
+  padding-right: $gallery-margin;
 }
 
 .gallery-img img {

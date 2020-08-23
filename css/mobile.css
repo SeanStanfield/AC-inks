@@ -83,13 +83,6 @@ section.landing {
   display: none;
 }
 
-:root {
-  --neon-text-color: cyan;
-  --neon-text-glow: rgba(0, 255, 255, 0.76);
-  --bg-glow-color: rgba(42, 219, 219, 0.226);
-  --gallery-margin: 0.7rem;
-}
-
 .neon-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,8 +131,8 @@ section.landing {
   font-family: brat;
   font-size: 1rem;
   color: #222222;
-  -webkit-box-shadow: 0px 0px 20px var(--neon-text-glow);
-          box-shadow: 0px 0px 20px var(--neon-text-glow);
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.76);
+          box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.76);
   -webkit-animation: throb infinite 10s ease alternate;
           animation: throb infinite 10s ease alternate;
   margin-bottom: 5vmax;
@@ -147,23 +140,23 @@ section.landing {
 
 @-webkit-keyframes throb {
   from {
-    -webkit-box-shadow: 0px 0px 20px var(--neon-text-glow);
-            box-shadow: 0px 0px 20px var(--neon-text-glow);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.76);
+            box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.76);
   }
   to {
-    -webkit-box-shadow: 0px 0px 30px var(--neon-text-glow);
-            box-shadow: 0px 0px 30px var(--neon-text-glow);
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.76);
+            box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.76);
   }
 }
 
 @keyframes throb {
   from {
-    -webkit-box-shadow: 0px 0px 20px var(--neon-text-glow);
-            box-shadow: 0px 0px 20px var(--neon-text-glow);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.76);
+            box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.76);
   }
   to {
-    -webkit-box-shadow: 0px 0px 30px var(--neon-text-glow);
-            box-shadow: 0px 0px 30px var(--neon-text-glow);
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.76);
+            box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.76);
   }
 }
 
@@ -214,10 +207,10 @@ section.landing {
 
 .neon-text {
   font-family: "NEON";
-  color: var(--neon-text-color);
+  color: cyan;
   font-size: 12vmin;
   text-align: center;
-  text-shadow: var(--neon-text-color) 0px 0px 5px, var(--neon-text-color) 0px 0px 3px;
+  text-shadow: cyan 0px 0px 5px, cyan 0px 0px 3px;
   letter-spacing: 0.5rem;
   position: relative;
   -webkit-animation: flickertext 4s infinite;
@@ -240,7 +233,7 @@ section.landing {
   left: 0%;
   -webkit-transform: translateX(-15%);
           transform: translateX(-15%);
-  background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+  background-image: radial-gradient(rgba(42, 219, 219, 0.226)) 55%, transparent 75%;
   -webkit-filter: blur(35px);
           filter: blur(35px);
   -webkit-animation: flickerbg 4s infinite;
@@ -249,121 +242,121 @@ section.landing {
 
 @-webkit-keyframes flickertext {
   19% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: cyan;
+    text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
   }
   20% {
     text-shadow: none;
     color: #222222;
   }
   24% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: cyan;
+    text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
   }
   79% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: cyan;
+    text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
   }
   80% {
     text-shadow: none;
     color: #222222;
   }
   81% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: cyan;
+    text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
   }
   81.5% {
     text-shadow: none;
     color: #222222;
   }
   83% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: cyan;
+    text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
   }
   100% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: cyan;
+    text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
   }
 }
 
 @keyframes flickertext {
   19% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: cyan;
+    text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
   }
   20% {
     text-shadow: none;
     color: #222222;
   }
   24% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: cyan;
+    text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
   }
   79% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: cyan;
+    text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
   }
   80% {
     text-shadow: none;
     color: #222222;
   }
   81% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: cyan;
+    text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
   }
   81.5% {
     text-shadow: none;
     color: #222222;
   }
   83% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: cyan;
+    text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
   }
   100% {
-    color: var(--neon-text-color);
-    text-shadow: cyan 0px 0px 30px, var(--neon-text-glow) 0px 0px 10px;
+    color: cyan;
+    text-shadow: cyan 0px 0px 30px, rgba(0, 255, 255, 0.76) 0px 0px 10px;
   }
 }
 
 @-webkit-keyframes flickerbg {
   19% {
-    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+    background-image: radial-gradient(rgba(42, 219, 219, 0.226)) 55%, transparent 75%;
   }
   20% {
     background-image: radial-gradient(rgba(46, 243, 243, 0.096) 55%, transparent 75%);
   }
   24% {
-    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+    background-image: radial-gradient(rgba(42, 219, 219, 0.226)) 55%, transparent 75%;
   }
   79% {
-    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+    background-image: radial-gradient(rgba(42, 219, 219, 0.226)) 55%, transparent 75%;
   }
   80% {
     background-image: radial-gradient(rgba(46, 243, 243, 0.096) 55%, transparent 75%);
   }
   81% {
-    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+    background-image: radial-gradient(rgba(42, 219, 219, 0.226)) 55%, transparent 75%;
   }
 }
 
 @keyframes flickerbg {
   19% {
-    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+    background-image: radial-gradient(rgba(42, 219, 219, 0.226)) 55%, transparent 75%;
   }
   20% {
     background-image: radial-gradient(rgba(46, 243, 243, 0.096) 55%, transparent 75%);
   }
   24% {
-    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+    background-image: radial-gradient(rgba(42, 219, 219, 0.226)) 55%, transparent 75%;
   }
   79% {
-    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+    background-image: radial-gradient(rgba(42, 219, 219, 0.226)) 55%, transparent 75%;
   }
   80% {
     background-image: radial-gradient(rgba(46, 243, 243, 0.096) 55%, transparent 75%);
   }
   81% {
-    background-image: radial-gradient(var(--bg-glow-color) 55%, transparent 75%);
+    background-image: radial-gradient(rgba(42, 219, 219, 0.226)) 55%, transparent 75%;
   }
 }
 
@@ -435,13 +428,13 @@ section.landing {
   width: 45%;
   /* flex-basis: 140px; */
   /* max-width: 150px; */
-  padding-left: var(--gallery-margin);
-  padding-bottom: var(--gallery-margin);
+  padding-left: 0.7rem;
+  padding-bottom: 0.7rem;
   /* max-width: 300px; */
 }
 
 .gallery-img:nth-child(even) {
-  padding-right: var(--gallery-margin);
+  padding-right: 0.7rem;
 }
 
 .gallery-img img {
@@ -451,4 +444,3 @@ section.landing {
   width: 100%;
   height: auto;
 }
-/*# sourceMappingURL=mobile.css.map */
