@@ -1,4 +1,4 @@
-@media all and (min-width: 1000px) and (orientation: landscape) {
+@media all and (min-width: 1000px) {
   section.landing {
     text-align: left;
     padding-left: 5rem;
@@ -45,14 +45,14 @@
 
   .neon-container .neon-text {
     text-align: left;
-    font-size: 70px;
+    font-size: 85px;
   }
 
   .subtitle {
     text-align: left;
     font-size: 1.5rem;
     position: absolute;
-    left: 350px;
+    left: 400px;
     transform: translateY(-50%) rotate(-10deg);
   }
 
@@ -63,5 +63,41 @@
     margin-top: 5rem;
     padding-left: 0;
     padding-bottom: 3rem;
+  }
+
+  .latest-title {
+    font-size: 5.5rem;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .latest-intro {
+    margin-bottom: 60px;
+    font-size: 19px;
+  }
+
+  .latest-gallery {
+    justify-content: flex-start;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .latest-gallery .gallery-img {
+    width: 33.3%;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    object-fit: cover;
+  }
+
+  .gallery-img img {
+    object-fit: cover;
+  }
+
+  .gallery-img:nth-child(3n) {
+    padding-right: 1rem;
   }
 }

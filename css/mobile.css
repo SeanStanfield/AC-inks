@@ -72,6 +72,7 @@ section.landing {
   --neon-text-color: cyan;
   --neon-text-glow: rgba(0, 255, 255, 0.76);
   --bg-glow-color: rgba(42, 219, 219, 0.226);
+  --gallery-margin: 0.7rem;
 }
 
 .neon-container {
@@ -278,7 +279,67 @@ section.landing {
 }
 
 .latest {
-  height: 100vh;
+  height: auto; /*change me*/
   background-color: rgb(20, 20, 20);
   /* border: pink solid; */
+}
+
+.latest-header {
+  text-align: center;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.latest-title {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+
+.body {
+  font-family: "MADE TOMMY";
+  color: whitesmoke;
+  font-size: 17px;
+  width: 500px;
+  max-width: 85vw;
+}
+
+.latest-intro {
+  opacity: 0.8;
+}
+
+.latest-gallery {
+  height: auto;
+  min-height: 500px;
+  /* border: solid pink; */
+  margin: 2rem 0rem 0rem 0rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.gallery-img {
+  box-sizing: content-box;
+  width: 45%;
+  /* flex-basis: 140px; */
+  /* max-width: 150px; */
+  padding-left: var(--gallery-margin);
+  padding-bottom: var(--gallery-margin);
+  /* max-width: 300px; */
+}
+
+.gallery-img:nth-child(even) {
+  padding-right: var(--gallery-margin);
+}
+
+.gallery-img img {
+  /* border: solid red; */
+  object-fit: contain;
+  width: 100%;
+  height: auto;
 }

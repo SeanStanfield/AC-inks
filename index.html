@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/mobile.css" />
+    <link rel="stylesheet" href="/css/tablet.css" />
     <link rel="stylesheet" href="/css/desktop.css" />
     <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <!-- libraries -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css"
     />
   </head>
   <body>
@@ -45,8 +51,86 @@
 
       <div class="landing-bottom"></div>
     </section>
-    <section class="latest"></section>
+    <section class="latest">
+      <div class="latest-header">
+        <h2 class="brush latest-title">Recent Work</h2>
+        <p class="body latest-intro">
+          For the past 2 years, I’ve been well into tattoos. Like I did my own
+          leg and stuff just for practice cos I’m ‘ard.
+        </p>
+      </div>
+      <div class="latest-gallery">
+        <a
+          class="gallery-img"
+          href="/assets/deer.png"
+          data-lightbox="hero"
+          data-title="man doing a tattoo"
+        >
+          <img src="/assets/deer.png" alt=""
+        /></a>
+        <a
+          class="gallery-img"
+          href="/assets/dreamcatcher.png"
+          data-lightbox="hero"
+          data-title="man doing a tattoo"
+        >
+          <img src="/assets/dreamcatcher.png" alt=""
+        /></a>
 
+        <a
+          class="gallery-img"
+          href="/assets/frogshroom.png"
+          data-lightbox="hero"
+          data-title="man doing a tattoo"
+        >
+          <img src="/assets/frogshroom.png" alt=""
+        /></a>
+        <a
+          class="gallery-img"
+          href="/assets/joker.png"
+          data-lightbox="hero"
+          data-title="man doing a tattoo"
+        >
+          <img src="/assets/joker.png" alt=""
+        /></a>
+        <a
+          class="gallery-img"
+          href="/assets/octopussy.png"
+          data-lightbox="hero"
+          data-title="man doing a tattoo"
+        >
+          <img src="/assets/octopussy.png" alt=""
+        /></a>
+        <a
+          class="gallery-img"
+          href="/assets/skullmask.png"
+          data-lightbox="hero"
+          data-title="man doing a tattoo"
+        >
+          <img src="/assets/skullmask.png" alt=""
+        /></a>
+        <a
+          class="gallery-img"
+          href="/assets/skullrose.png"
+          data-lightbox="hero"
+          data-title="man doing a tattoo"
+        >
+          <img src="/assets/skullrose.png" alt=""
+        /></a>
+        <a
+          class="gallery-img"
+          href="/assets/sunset.jpg"
+          data-lightbox="hero"
+          data-title="man doing a tattoo"
+        >
+          <img src="/assets/sunset.jpg" alt=""
+        /></a>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+    <script src="/lightbox.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
