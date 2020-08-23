@@ -27,16 +27,9 @@
     text-decoration: none;
   }
 
-  /* section.landing::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 35vw;
-    background-image: linear-gradient(to right, black, transparent);
-    height: 100vh;
-    z-index: -1;
-  } */
+  .landing-arrow {
+    padding-top: 5vmax;
+  }
 
   .neon-container {
     justify-content: flex-start;
