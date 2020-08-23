@@ -295,7 +295,7 @@ section.landing {
 
 .latest-title {
   font-size: 3rem;
-  padding-bottom: 3rem;
+  padding: 0 0.4rem 3rem 0.4rem;
 }
 
 .body {

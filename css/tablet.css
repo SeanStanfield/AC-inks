@@ -1,0 +1,10 @@
+@media all and (min-width: 500px) {
+  .latest-title {
+    font-size: 4.5rem;
+    padding: 2rem 1rem 5rem 1rem;
+  }
+
+  .latest-intro {
+    padding-bottom: 40px;
+  }
+}
