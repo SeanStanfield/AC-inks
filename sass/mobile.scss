@@ -300,7 +300,7 @@ $gallery-margin: 0.7rem;
   min-height: 500px;
   /* border: solid pink; */
   margin: 2rem 0rem 0rem 0rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -327,4 +327,60 @@ $gallery-margin: 0.7rem;
   object-fit: contain;
   width: 100%;
   height: auto;
+}
+
+.testimonials {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.testimonials::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100vw;
+  top: 0px;
+  left: 0;
+  height: 70px;
+  // background-color: red;
+  background-image: linear-gradient(rgb(7, 7, 7), transparent);
+  // z-index: 2;
+}
+
+.testimonials h2.brush {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97vw;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.testimonial-content {
+  color: white;
+  text-align: center;
+  flex: 2;
+  padding: 0 1rem;
+  max-width: 500px;
+  font-family: "MADE TOMMY", "lato", sans-serif;
+}
+
+.testimonial-body {
+  margin-bottom: 2rem;
+  font-size: 15px;
+}
+
+.testimonial-container .arr-left {
+  transform: rotateZ(90deg) translateX(-20px);
+}
+.testimonial-container .arr-right {
+  transform: rotateZ(-90deg) translateX(20px);
 }

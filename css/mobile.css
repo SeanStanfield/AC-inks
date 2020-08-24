@@ -407,7 +407,7 @@ section.landing {
   min-height: 500px;
   /* border: solid pink; */
   margin: 2rem 0rem 0rem 0rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -443,4 +443,70 @@ section.landing {
      object-fit: contain;
   width: 100%;
   height: auto;
+}
+
+.testimonials {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.testimonials::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100vw;
+  top: 0px;
+  left: 0;
+  height: 70px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#070707), to(transparent));
+  background-image: linear-gradient(#070707, transparent);
+}
+
+.testimonials h2.brush {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.testimonial-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 97vw;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.testimonial-content {
+  color: white;
+  text-align: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 0 1rem;
+  max-width: 500px;
+  font-family: "MADE TOMMY", "lato", sans-serif;
+}
+
+.testimonial-body {
+  margin-bottom: 2rem;
+  font-size: 15px;
+}
+
+.testimonial-container .arr-left {
+  -webkit-transform: rotateZ(90deg) translateX(-20px);
+          transform: rotateZ(90deg) translateX(-20px);
+}
+
+.testimonial-container .arr-right {
+  -webkit-transform: rotateZ(-90deg) translateX(20px);
+          transform: rotateZ(-90deg) translateX(20px);
 }
