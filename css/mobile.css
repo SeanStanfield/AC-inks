@@ -402,6 +402,10 @@ section.landing {
   opacity: 0.8;
 }
 
+section.latest {
+  position: relative;
+}
+
 .latest-gallery {
   height: auto;
   min-height: 500px;
@@ -445,6 +449,14 @@ section.landing {
   height: auto;
 }
 
+.latest-gallery .final {
+  display: none;
+}
+
+.gallery-tag {
+  display: none;
+}
+
 .testimonials {
   width: 100%;
   height: auto;
@@ -483,6 +495,7 @@ section.landing {
   width: 97vw;
   margin: auto;
   margin-top: 3rem;
+  position: relative;
 }
 
 .testimonial-content {
@@ -491,22 +504,99 @@ section.landing {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 1rem;
-  max-width: 500px;
+  max-width: 85vw;
   font-family: "MADE TOMMY", "lato", sans-serif;
 }
 
 .testimonial-body {
   margin-bottom: 2rem;
-  font-size: 15px;
+  font-size: 14px;
+  max-width: 80vw;
 }
 
 .testimonial-container .arr-left {
-  -webkit-transform: rotateZ(90deg) translateX(-20px);
-          transform: rotateZ(90deg) translateX(-20px);
+  -webkit-transform: rotateZ(90deg) translateX(50px);
+          transform: rotateZ(90deg) translateX(50px);
+  cursor: pointer;
 }
 
 .testimonial-container .arr-right {
-  -webkit-transform: rotateZ(-90deg) translateX(20px);
-          transform: rotateZ(-90deg) translateX(20px);
+  -webkit-transform: rotateZ(-90deg) translateX(-50px);
+          transform: rotateZ(-90deg) translateX(-50px);
+  cursor: pointer;
+}
+
+.testimonial-content > [class^="test"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+.testimonial-content .test-item {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.testimonial-content .current-test {
+  opacity: 1;
+}
+
+.testimonials .draw-self {
+  display: none;
+}
+
+section.contact {
+  height: auto;
+  min-height: 500px;
+  background-image: url(/assets/Contactbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.45);
+          box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.45);
+  padding-bottom: 3rem;
+}
+
+.contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contact-content .brush {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.contact-content .body {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-content .body a {
+  color: white;
+}
+
+.contact-content .cta {
+  margin-top: 0.75rem;
 }

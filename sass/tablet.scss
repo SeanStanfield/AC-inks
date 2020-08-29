@@ -7,4 +7,62 @@
   .latest-intro {
     padding-bottom: 40px;
   }
+
+  .gallery-tag {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    margin-top: 20px;
+    right: 20px;
+    // transform: translateX(-100%);
+    color: white;
+    z-index: 2;
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .testimonials {
+    min-height: 500px;
+    padding-top: 8rem;
+  }
+
+  .testimonials h2.brush {
+    font-size: 9vmin;
+    padding-bottom: 3vw;
+  }
+
+  .testimonial-container {
+    justify-content: space-around;
+  }
+
+  .testimonial-body {
+    font-size: 18px;
+  }
+
+  .testimonial-container .arr-left {
+    transform: rotateZ(90deg) translateX(40px) scale(1.4);
+  }
+  .testimonial-container .arr-right {
+    transform: rotateZ(-90deg) translateX(-40px) scale(1.4);
+  }
+
+  .contact-content {
+    .brush {
+      font-size: 9vmin;
+      margin-bottom: 5rem;
+      margin-top: 6rem;
+    }
+
+    .body {
+      font-size: 19px;
+    }
+
+    .cta {
+      padding: 0.8rem 1.3rem;
+      margin-top: 1rem;
+    }
+  }
 }

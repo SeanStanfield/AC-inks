@@ -58,6 +58,10 @@
     padding-bottom: 3rem;
   }
 
+  section.latest {
+    position: relative;
+  }
+
   .latest-title {
     font-size: 5.5rem;
     padding-top: 80px;
@@ -73,6 +77,15 @@
     justify-content: flex-start;
     max-width: 1400px;
     margin: auto;
+
+    .final {
+      display: block;
+    }
+  }
+
+  .gallery-tag {
+    right: 2.5vw;
+    margin-top: 0px;
   }
 
   .latest-gallery .gallery-img {
@@ -92,5 +105,104 @@
 
   .gallery-img:nth-child(3n) {
     padding-right: 1rem;
+  }
+
+  .testimonials {
+    min-height: 700px;
+    padding-top: 8rem;
+    // cursor: pointer;
+  }
+
+  .testimonial-container {
+    max-width: 1100px;
+  }
+
+  .testimonial-content {
+    max-width: 700px;
+  }
+
+  .testimonial-body {
+    font-size: 19px;
+    margin-bottom: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .testimonial-author {
+    font-size: 22px;
+  }
+
+  .testimonial-container [class*="arr"] {
+    width: 25px;
+    position: relative;
+    top: 50px;
+  }
+
+  .testimonial-container .arr-left {
+    transform: rotateZ(90deg) translateX(-20px) scale(1.4);
+  }
+  .testimonial-container .arr-right {
+    transform: rotateZ(-90deg) translateX(20px) scale(1.4);
+  }
+
+  .testimonials .draw-self {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  #floralFace {
+    transform: translate(8vw, 16vh);
+
+    path {
+      transition: 20s ease;
+      stroke-dashoffset: 500;
+      stroke-dasharray: 500;
+    }
+  }
+
+  #floralFace:hover path {
+    stroke-dashoffset: 0;
+  }
+
+  #stag {
+    transform: translate(82vw, 12vh);
+  }
+
+  section.contact {
+    background-size: 65%;
+    background-position: right;
+    min-height: 90vh;
+    position: relative;
+    z-index: -2;
+  }
+
+  section.contact::before {
+    content: "";
+    width: 45vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgb(20, 20, 20) 35vw,
+      transparent
+    );
+    z-index: -1;
+  }
+
+  .contact-content {
+    align-items: flex-start;
+    margin-left: 5rem;
+
+    .brush {
+      margin-top: 10rem;
+    }
+
+    .body {
+      text-align: left;
+    }
   }
 }
