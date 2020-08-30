@@ -1,7 +1,7 @@
-const floralPath = document.querySelector("#floralFace path");
+// const floralPath = document.querySelector("#floralFace path");
 
-const floralLength = floralPath.getTotalLength();
-console.log(floralLength);
+// const floralLength = floralPath.getTotalLength();
+// console.log(floralLength);
 
 // floralPath.setAttribute("stroke-dasharray", floralLength);
 // floralPath.setAttribute("stroke-dashoffset", floralLength);
