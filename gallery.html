@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
 
-    <link rel="stylesheet" href="/css/" />
+    <link rel="stylesheet" href="/css/mobile.css" />
     <link rel="stylesheet" href="/css/tablet.css" />
-    <link rel="stylesheet" href="/css/desktop.css" />
+    <link rel="stylesheet" href="/css/gallery.css" />
+    <link rel="stylesheet" href="/css/gallerytablet.css" />
+    <link rel="stylesheet" href="/css/gallerydesktop.css" />
     <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
@@ -19,5 +21,106 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css"
     />
   </head>
-  <body></body>
+  <body>
+    <section class="landing">
+      <nav class="nav">
+        <div class="left">
+          <span class="name brush">Aaron Chinn</span>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a class="brush" href="#">About</a></li>
+            <li><a class="brush" href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="neon-container">
+        <div class="neon-text">
+          <h1>GALLERY</h1>
+        </div>
+      </div>
+
+      <p class="hero-para">
+        Welcome to my gallery. Here you can see all my latest work. Like what
+        you see? Feel free to message me if you want a piece made for you.
+      </p>
+
+      <div class="landing-bottom"></div>
+    </section>
+    <section class="gallery">
+      <div class="gallery-content">
+        <a
+          class="gallery-img full"
+          href="/assets/deer.png"
+          data-lightbox="hero"
+          data-title="mountain deer"
+        >
+          <img src="/assets/deer.png" alt=""
+        /></a>
+        <a
+          class="gallery-img full"
+          href="/assets/octopusfull.jpg"
+          data-lightbox="hero"
+          data-title="mountain deer"
+        >
+          <img src="/assets/octopusfull.jpg" alt=""
+        /></a>
+        <a
+          class="gallery-img full"
+          href="/assets/Skulltree.jpg"
+          data-lightbox="hero"
+          data-title="mountain deer"
+        >
+          <img src="/assets/Skulltree.jpg" alt=""
+        /></a>
+        <a
+          class="gallery-img full"
+          href="/assets/joker.png"
+          data-lightbox="hero"
+          data-title="mountain deer"
+        >
+          <img src="/assets/joker.png" alt=""
+        /></a>
+        <a
+          class="gallery-img full"
+          href="/assets/dreamcatcherfull.jpg"
+          data-lightbox="hero"
+          data-title="mountain deer"
+        >
+          <img src="/assets/dreamcatcherfull.jpg" alt=""
+        /></a>
+        <a
+          class="gallery-img full"
+          href="/assets/feet.png"
+          data-lightbox="hero"
+          data-title="mountain deer"
+        >
+          <img src="/assets/feet.png" alt=""
+        /></a>
+        <a
+          class="gallery-img full"
+          href="/assets/frogshroom.png"
+          data-lightbox="hero"
+          data-title="mountain deer"
+        >
+          <img src="/assets/frogshroom.png" alt=""
+        /></a>
+      </div>
+    </section>
+
+    <section class="more">
+      <div class="more-top"></div>
+
+      <h1 class="brush more-heading">Want More ?</h1>
+      <p class="body more-body">
+        Like what you see ? View my Instagram to see all my previous work, or
+        message me if you’re interested in finding out more about what I do.
+      </p>
+      <a href="#" class="cta">EMAIL ME</a>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+    <script src="/lightbox.js"></script>
+  </body>
 </html>

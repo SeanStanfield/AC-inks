@@ -2,30 +2,32 @@
   .nav {
     height: 120px;
   }
-
   .nav .right {
     text-align: right;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .nav .right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 250px;
     margin-right: 3rem;
     list-style-type: none;
   }
-
   .right ul a {
     text-decoration: none;
   }
-
   section.landing {
     min-height: 60vh;
     padding-bottom: 55px;
   }
-
   section.gallery {
-    background-color: rgb(7, 7, 7) !important;
+    background-color: #070707 !important;
     min-height: 600px;
     border-bottom: goldenrod solid;
   }
