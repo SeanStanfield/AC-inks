@@ -179,7 +179,7 @@
     background-position: right;
     min-height: 90vh;
     position: relative;
-    z-index: -2;
+    z-index: 0;
   }
   section.contact::before {
     content: "";
