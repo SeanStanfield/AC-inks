@@ -20,11 +20,8 @@ section.gallery {
   .gallery-content {
     width: 95vw;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 185vw;
-    align-items: center;
+    height: auto;
+    columns: 2;
   }
 
   .gallery-img {
@@ -33,7 +30,7 @@ section.gallery {
   }
 
   .gallery-img.full img {
-    width: 100% !important;
+    width: 100%;
     flex: 1;
     height: auto;
     min-width: unset !important;

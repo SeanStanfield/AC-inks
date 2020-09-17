@@ -24,9 +24,41 @@
     padding-bottom: 55px;
   }
 
+  .landing .body {
+    font-size: 20px;
+  }
+
   section.gallery {
     background-color: rgb(7, 7, 7) !important;
     min-height: 600px;
-    border-bottom: goldenrod solid;
+  }
+
+  .more {
+    min-height: 70vh;
+
+    .more-top {
+      height: 70px;
+    }
+
+    .body {
+      font-size: 20px;
+      padding-top: 30px;
+    }
+
+    .brush {
+      font-size: 4rem;
+      padding: 8rem 0 0rem 0;
+    }
+  }
+
+  section.gallery {
+    .gallery-content {
+      height: auto;
+      columns: 3;
+
+      a {
+        max-width: 30vw;
+      }
+    }
   }
 }

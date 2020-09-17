@@ -314,7 +314,8 @@ section.latest {
   position: relative;
 }
 
-.gallery-img {
+.gallery-img,
+.latest-gallery a {
   box-sizing: content-box;
   width: 45%;
   /* flex-basis: 140px; */
@@ -416,6 +417,7 @@ section.latest {
   position: absolute;
   top: 0;
   // left: 0;
+  pointer-events: none;
 }
 
 .testimonial-content .test-item {
@@ -424,6 +426,7 @@ section.latest {
 
 .testimonial-content .current-test {
   opacity: 1;
+  pointer-events: all;
 }
 
 .testimonials .draw-self {
